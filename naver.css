@@ -4,6 +4,7 @@
 html,body{
     padding: 0;
     margin: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
 #fixed{
@@ -27,18 +28,26 @@ html,body{
 }
 
 .area_flex{
-    position: relative;
     margin: 0 auto;
     width: 1080px;
+    position: relative;
     height: 100%;
+
 }
 
 header {
     height: 170px;
 }
 
+main {
+    background-color: #f2f4f7;
+    display: inline-block;
+    width: 100%;
+}
+
 #header-top {
     float: right;
+    margin-top: 8px;
 }
 
 #header-top span {
@@ -46,13 +55,15 @@ header {
     letter-spacing: -1px;
     font-size: 11px;
     line-height: 22px;
+    height: 21px;
+    letter-spacing: -1px;
 }
 
 #header-search {
     clear: both;
-    padding-top: 20px;
+    padding-top: 12px;
 }
-#header_search > a{
+#header_search  a{
     text-decoration: none;
 }
 #header_search h1 {
@@ -62,15 +73,20 @@ header {
     background: url(./sp_search.png) -4px -4px no-repeat;
     vertical-align: middle;
     position: relative;
-    top: -6px;
+    top: 38px;
+    left: 1px;
 }
 
-#header_search > a  span{
+#header_search h1 span{
     display:none;
 }
 
+#header-search h2{
+    display: none;
+}
+
 #header_search fieldset{
-    margin-left: 20px;
+    margin-left: 18px;
     padding: 12px 0 12px 10px;
     width: 521px;
     height: 49px;
@@ -78,15 +94,17 @@ header {
     border: 2px solid #03cf5d;
     vertical-align: middle;
     position: relative;
+    top: 44px;
 }
 
 #header_search fieldset input {
     border: none;
     padding: 0;
     outline: none;
-    width: 405px;
-    height: 23px;
     vertical-align: top;
+    width: 395px;
+    height: 23px;
+
 }
 
 #header_search fieldset button {
@@ -100,7 +118,30 @@ header {
     top: -2px;
 }
 
-#header_search fieldset button .search-image {
+#search-keyboard {
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 11px;
+    background-position: -33px -60px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+
+#search-history {
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 4px;
+    background-position: -87px -60px;
+    display: inline-block;
+    margin: 0 6px;
+    vertical-align: middle;
+
+}
+
+#search-image {
     background: url(./sp_search.png);
     background-position: -3px -60px;
     background-repeat: no-repeat;
@@ -109,10 +150,15 @@ header {
     display: inline-block;
     margin: 14px;
 }
-
+nav{
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+    border-bottom: 1px solid #d1d8e4;
+}
 nav ul {
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 16px 0 0 4px;
     list-style: none;
 }
 
@@ -159,6 +205,84 @@ nav li:nth-child(5) span:first-child{
 nav li:nth-child(6) span:first-child{
     width: 25px;
     background-position: -71px -285px;
+}
+
+nav li:nth-child(7) span:first-child{
+    width: 32px;
+    background-position: -244px -208px;
+}
+
+nav li:nth-child(8) span:first-child{
+    width: 26px;
+    background-position: -294px -182px;
+}
+
+
+nav li:nth-child(9) span:first-child{
+    width: 28px;
+    background-position: -200px -208px;
+}
+
+nav li:nth-child(10) span:first-child{
+    width: 26px;
+    background-position: -294px -104px;
+}
+
+nav li:nth-child(11) span:first-child{
+    width: 40px;
+    background-position: -124px -156px;
+}
+
+nav li:nth-child(12) span:first-child{
+    width: 27px;
+    background-position: -148px -259px;
+}
+
+nav li:nth-child(13) span:first-child{
+    width: 27px;
+    background-position: -222px -259px;
+}
+
+nav li:nth-child(14) span:first-child{
+    width: 26px;
+    background-position: -294px -130px;
+}
+
+
+nav li:nth-child(15) span:first-child{
+    width: 13px;
+    background-position: -79px -78px;
+}
+
+nav li:nth-child(16) span:first-child{
+    width: 27px;
+    background-position: -185px -259px;
+}
+
+nav li.more:first-child span:first-child {
+    display:inline-block;
+    width: 55px;
+    background-position: -66px -104px;
+}
+
+.nav-divider {
+    display: inline-block;
+    margin: 18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+
+#search-ranking {
+    position: absolute;
+    top: 16px;
+    right: 100px;
+}
+
+#rank-number {
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
 }
 
 
